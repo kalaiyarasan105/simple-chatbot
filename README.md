@@ -10,7 +10,7 @@ To set up the Simple-Chat-Bot on your local machine, follow these steps:
 
 Clone the repository:
 
-git clone https://github.com/MEERAN2314/Simple-Chat-Bot.git
+git clone https://github.com/kalaiyarasan105/simple-chatbot 
 cd Simple-Chat-Bot
 Create a virtual environment (recommended):
 
