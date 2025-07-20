@@ -1,49 +1,45 @@
-Simple-Chat-Bot
-A simple command-line chat bot application built with Python. This bot can engage in basic conversations, respond to user input, and provide information based on predefined rules.
+# 🤖 Simple Groq AI Chatbot
 
-Features
-Interactive Command-Line Interface: Engage with the bot directly from your terminal.
-Basic Conversational Abilities: Responds to greetings, questions, and common phrases.
-Extensible: Easily add new rules and responses to expand the bot's knowledge.
-Installation
-To set up the Simple-Chat-Bot on your local machine, follow these steps:
+This is a simple command-line and API-based chatbot built using Python, FastAPI, LangChain, and the Groq LLaMA 3 model. It answers user questions using real AI logic.
 
-Clone the repository:
+---
 
-git clone https://github.com/kalaiyarasan105/simple-chatbot 
-cd Simple-Chat-Bot
-Create a virtual environment (recommended):
+## 🚀 Features
 
+- Chat via terminal or API
+- Real-time responses using Groq LLaMA3
+- FastAPI `/ask` endpoint for web interaction
+- Secure `.env` for API key
+
+---
+
+## 🛠 Installation
+
+bash
+git clone https://github.com/kalaiyarasan105/simple-chatbot
+cd simple-chatbot
 python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-Install dependencies:
-
+# Windows: venv\Scripts\activate
+# Linux/macOS: source venv/bin/activate
 pip install -r requirements.txt
-Usage
-To run the chat bot, you have two options:
+Create .env:
 
-Command-Line Interface (CLI)
-To interact with the bot via the command line, execute the main.py file:
-
+ini
+GROQ_API_KEY="your_groq_api_key"
+💬 Usage
+▶ Terminal Mode
 python main.py
-The bot will start, and you can begin interacting with it by typing messages into the terminal.
-
-FastAPI (Web Interface)
-If you want to run the bot as a web service using FastAPI, use the following command:
-
+🌐 API Mode
+bash
 uvicorn main:app --reload
-This will start the FastAPI server, typically accessible at http://127.0.0.1:8000.
+Test at: http://127.0.0.1:8000/docs
 
-Streamlit UI
-To run the Streamlit-based user interface, use the following command:
+📁 Files
+main.py – Bot logic + FastAPI server
 
-streamlit run ui.py
-This will open the Streamlit application in your web browser, usually at http://localhost:8501.
+.env – API key
 
-Technologies Used
-Python
-ui.py (for Streamlit user interface interactions)
-main.py (main application logic, including FastAPI integration)
-requirements.txt (for dependency management)
-FastAPI
-Streamlit
+vercel.json – Optional deployment
+
+🎥 Demo
+Run the bot in terminal
